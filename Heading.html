@@ -56,7 +56,18 @@
         <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333">
     </body>
     
-    <div>
+    <div id="fools">
+        <style>
+            #fools {
+                margin: 10px 0;
+                padding: 1px;
+                border: 1px solid black;
+                border-radius: 2px;
+                background-color: lightblue;
+                height: 100px;
+                width: 200px;
+            }
+        </style>
         <input name="Country" list="Countries" placeholder="Country">
         <datalist id="Countries">
             <option value="USA">
@@ -64,18 +75,104 @@
             <option value="Mexico">
         </datalist>    
     </div>
-    <style>
-        div {
-            margin: 20px 0;
-            padding: 0;
-            border: 1px solid black;
-            border-radius: 5px;
-            background-color: Grey;
-            height: 300px;
-            width: 200px;
+    <br>
+    <div id="Foo">
+        <head>
+            <title> Size Attribute </title>
+        </head>
+        <body>
+            Hello world!
+        </body>
+            <style>
+                #Foo {
+                    font-size: 20px;
+                    background-color: white;
+                    width: 200px;
+                    height: 200px;
+                    border: 3px solid black;}
+            </style>
+    </div>
 
-        }
-    </style>
     <div>
-        <title> Size Attribute </title>
+        <head>
+            <title> Classes </title>
+            <style>
+                .baz {
+                    color: red;
+                    font-size: 20px;
+                }
+                button {
+                    color: blue;
+                    font-size: 20px;
+                    background-color: green;
+                }
+                button:hover {
+                    background-color: yellow;
+                }
+                @media (min-width: 600px) {
+                    body {
+                        background-color: lightblue;
+                    }
+                }
+                @media (max-width:599px) {
+                    body {
+                        background-color: red;
+                    }
+                }
+                #Container {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                #Container > div {
+                    background-color: red;
+                    width: 100px;
+                    margin: 10px;
+                    text-align: center;
+                    line-height: 75px;
+                    font-size: 30px;
+                }
+                #grid {
+                    background-color: lightblue;
+                    display: grid;
+                    padding: 10px;
+                    grid-template-columns: auto auto auto;
+                    grid-row-gap: 10px;
+                    grid-column-gap: 10px;
+                }
+                .grid-item {
+                    background-color: red;
+                    padding: 20px;
+                    font-size: 30px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            <button> click me </button>
+            <h1 class="baz">Heading 1</h1>
+            <h1 class="baz">Heading 2</h1>
+            <h1>Heading 3</h1>
+        </body>
+    </div>
+    <br>
+    <div id="Container">
+        <div> 1.This is a flexbox </div>
+        <div> 2.This is a flexbox </div>
+        <div> 3.This is a flexbox </div>
+        <div> 4.This is a flexbox </div>
+        <div> 5.This is a flexbox </div>
+        <div> 6.This is a flexbox </div>
+    </div>
+    <br>
+    <div id="grid">
+        <div class="grid-item"> 1.This is a grid </div>
+        <div class="grid-item"> 2.This is a grid </div>
+        <div class="grid-item"> 3.This is a grid </div>
+        <div class="grid-item"> 4.This is a grid </div>
+        <div class="grid-item"> 5.This is a grid </div>
+        <div class="grid-item"> 6.This is a grid </div>
+        <div class="grid-item"> 7.This is a grid </div>
+        <div class="grid-item"> 8.This is a grid </div>
+        <div class="grid-item"> 9.This is a grid </div>
+        <div class="grid-item"> 10. This is a grid </div>
     </div>
